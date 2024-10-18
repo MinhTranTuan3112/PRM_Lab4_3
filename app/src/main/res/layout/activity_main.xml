@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:id="@+id/main">
+
+    <Button
+        android:id="@+id/btnPassByString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass by string"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnPassBySerializable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass by Serializable"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassByString"
+        app:layout_constraintStart_toStartOf="@+id/btnPassByString"/>
+
+    <Button
+        android:id="@+id/btnPassByParcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass by Parcelable"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassBySerializable"
+        app:layout_constraintStart_toStartOf="@+id/btnPassBySerializable"/>
+
+    <Button
+        android:id="@+id/btnPassByBundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass by Bundle"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassByParcelable"
+        app:layout_constraintStart_toStartOf="@+id/btnPassByParcelable"/>
+
+    <Button
+        android:id="@+id/btnPassByArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pass by Array"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnPassByBundle"
+        app:layout_constraintStart_toStartOf="@+id/btnPassByBundle"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
